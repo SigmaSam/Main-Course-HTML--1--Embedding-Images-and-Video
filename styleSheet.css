@@ -1,9 +1,28 @@
-.nav {
-  display: inline;
-  padding: 80px;
-  height: auto;
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
+li {
+  display: inline;
+}
+
+#searchButtom {
+  background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.BMifOzmDEu3qNf0vWzoRUgAAAA%26pid%3DApi&f=1)
+ }
+
+#add{
+  background: url(addvideo.png);
+}
+#grid{
+  background: url(grid.png);
+}
+#noti{
+  background: url(notifications.png);
+}
 #YTlogo {
   height: auto;
   width: 100px;
@@ -12,9 +31,9 @@
 
 #searchButtom {
   border: solid;
+  border-style: none;
   background-size: 100%;
 }
 
 #lupa {
-  background-size: 100%;
 }
