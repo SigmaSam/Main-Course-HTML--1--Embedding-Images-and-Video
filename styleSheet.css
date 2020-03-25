@@ -1,7 +1,6 @@
 .nav {
   display: inline;
   padding: 80px;
-
   height: auto;
 }
 
@@ -11,4 +10,11 @@
   position: left;
 }
 
-#classSearchBo
+#searchButtom {
+  border: solid;
+  background-size: 100%;
+}
+
+#lupa {
+  background-size: 100%;
+}
