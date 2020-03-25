@@ -4,10 +4,20 @@
   height: 38px;
   }
 
-  .nav-container {
+.nav-container {
     display:inline-block;
     padding: 20px;
    }
+
+.sidebar {
+  border:1px solid black;
+  width:150px;
+  max-height:450px;
+  height:auto;
+  overflow:scroll;
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
 
 #vidData {
   display: flex;
