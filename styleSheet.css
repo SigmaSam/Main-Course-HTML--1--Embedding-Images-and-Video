@@ -47,3 +47,20 @@
   height: auto;
   width: 100px;
 }
+
+#imgLike {
+  background: url(https://www.vhv.rs/file/max/25/251994_youtube-like-button-png.jpg);
+  max-width: 40px;
+  max-height: 40px;
+}
+#imgDislike {
+  background: url(https://www.kindpng.com/picc/m/11-115111_dislike-png-icon-transparent-png.png);
+  max-width: 40px;
+  max-height: 40px;
+}
+
+#imgShare {
+  background: url(https://cdn3.iconfinder.com/data/icons/virtual-notebook/16/button_share-512.png);
+  max-width: 40px;
+  max-height: 40px;
+}
