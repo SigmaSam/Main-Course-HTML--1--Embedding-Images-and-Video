@@ -67,6 +67,7 @@ button {
    'tittle . sidebar'
    'vidData vidData sidebar'
    'vidData vidData sidebar'
+   'vidData vidData sidebar'
    'videoDescription .  sidebar';
    padding: 3rem;
 }
@@ -82,19 +83,21 @@ button {
   grid-area: videoBox;
 }
 .item-B {
-  display: inline-grid;
+  display: grid;
   grid-area: vidData;
-  grid-gap: 3px;
+  grid-gap: 1rem;
   grid-template-areas:
   'avatar userName . . . . .'
   'avatar imgSubscribe . . . . views'
+  'addVideo shareButtn moreBtn . . dislike like'
+  'addVideo shareButtn moreBtn . . dislike like'
   'addVideo shareButtn moreBtn . . dislike like'
 }
 
 }
 .item-C {
 
-  grid-area:videoDescription;
+  /* grid-area:videoDescription; */
 
 }
 .item-D {
@@ -109,23 +112,63 @@ button {
 
 .vin-A {
   grid-area: avatar;
-  background-size: cover;
+  background: url(Images/avatar..png);
+  background-repeat: no-repeat;
+  background-size: 5rem 5rem;
+  background-position: center;
+
 }
 .vin-B {
   grid-area: userName;
+  text-decoration: none;
+  color: auto;
 }
 .vin-C {
   grid-area: imgSubscribe;
+  background: url(Images/subscribeButton.png);
+  background-repeat: no-repeat;
+  background-size: 15rem 5rem;
+  background-position: center;
 }
 .vin-D {
   grid-area: shareButtn;
+  background: url(Images/share.png);
+  background-repeat: no-repeat;
+  background-size: 10rem 3.6rem;
+  background-position: center;
 }
 .vin-E {
   grid-area: views;
 }
 .vin-F {
+
   grid-area: like;
+  background: url(Images/like.png);
+  background-repeat: no-repeat;
+  background-size: 3rem 3rem;
+  background-position: center;
+
 }
+
 .vin-G {
+
   grid-area: dislike;
+  background: url(Images/dislike.png);
+  background-repeat: no-repeat;
+  background-size: 3rem 3rem;
+  background-position: center;
+}
+.vin-H{
+
+grid-area: addVideo;
+background: url(Images/addvideo.png);
+background-repeat: no-repeat;
+background-size: 4rem 4rem;
+background-position: center;
+
+}
+
+.comments{
+  grid-area: videoDescription;
+
 }
