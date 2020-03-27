@@ -8,68 +8,96 @@ body {
   line-height: 1.4;
 }
 
-.nav-container {
-  color: white;
-  padding: 0.6rem 0.6rem;
-}
-
 button {
   background-color: white;
   border: 0;
 }
 
-.wrapper {
-  display: grid;
-  grid-gap: 20px;
+.nav-container {
+  color: white;
+  padding: 0.6rem 0.6rem;
 }
 
+.wrapper {
+  display: grid;
+}
+
+/*NavBar Area*/
 .nav-container {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 20% 1fr 5% 5% 5% 5% 5%;
+  grid-template-columns: 2fr 7fr 2fr;
   grid-template-rows: auto;
-
 }
 
 .userOptions {
+  float: left;
   margin-top: -20px;
-  grid-column-gap: 15px, 40px;
+  align-self: center;
+  justify-content: end;
+}
+
+.searchArea {
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  border: solid 0.5px;
+  margin-top: -5px;
+  border-right: none;
+  justify-self: center;
+}
+
+.sButton {
+  background: url("Images/lupa.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1.9rem;
+  width: 4rem;
+  margin-left: -0.4rem;
+  border: solid 0.5px;
+  border-color: grey;
 }
 
 #YTLogo {
-  column-fill: 100%;
-  height: 20;
+  height: 20px;
   width: 179px;
+  align-self: start;
 }
 
 #searchBox {
-  width:30rem;
+  width: 30rem;
   max-width: 100%;
   height: 1.9rem;
   margin-left: 40px;
-  align-items: end;
+  align-items: center;
 }
 
-#searchButton {
-  margin-top: -90px;
-  height: 1.9rem;
-  min-width: 1.5rem;
-
-
-}
-
-.videoArea{
+/*NavBar Area*/
+/* #searchButton {
+  border: black;
+  display: inline-flex;
+  align-self: center;
+  justify-content: center;
+  position: relative;
+  vertical-align: middle;
+  stroke: none;
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  grid-column: 2;
+} */
+.videoArea {
   display: grid;
   grid-gap: 20px;
   grid-template-areas:
-   'videoBox videoBox sidebar'
-   'videoBox videoBox sidebar'
-   'tittle . sidebar'
-   'vidData vidData sidebar'
-   'vidData vidData sidebar'
-   'vidData vidData sidebar'
-   'videoDescription .  sidebar';
-   padding: 3rem;
+    'videoBox videoBox sidebar'
+    'videoBox videoBox sidebar'
+    'tittle . sidebar'
+    'vidData vidData sidebar'
+    'vidData vidData sidebar'
+    'vidData vidData sidebar'
+    'videoDescription videoDescription  sidebar';
+  padding: 3rem;
 }
 
 /* .sidebar{
@@ -77,38 +105,37 @@ button {
    overflow-x: hidden;
    overflow-y: auto;
 } */
-
-
 .item-A {
   grid-area: videoBox;
-  margin-left: 15rem;
+  margin-left: 0.7rem;
+  height: 30rem;
+  width: 45rem;
 }
+
 .item-B {
   display: grid;
   grid-area: vidData;
   grid-gap: 1rem;
   grid-template-areas:
-  'avatar userName . . . . .'
-  'avatar imgSubscribe . . . . views'
-  'addVideo shareButtn moreBtn . . dislike like'
-  'addVideo shareButtn moreBtn . . dislike like'
-  'addVideo shareButtn moreBtn . . dislike like';
+    'avatar userName . . . . .'
+    'avatar imgSubscribe . . . . views'
+    'addVideo shareButtn moreBtn . . dislike like'
+    'addVideo shareButtn moreBtn . . dislike like'
+    'addVideo shareButtn moreBtn . . dislike like';
 }
 
-}
 .item-C {
-
   /* grid-area:videoDescription; */
-
 }
+
 .item-D {
- grid-area: sidebar;
- overflow-x: hidden;
- overflow-y: auto;
+  grid-area: sidebar;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .item-E {
-  grid-area:tittle;
+  grid-area: tittle;
 }
 
 .vin-A {
@@ -117,13 +144,13 @@ button {
   background-repeat: no-repeat;
   background-size: 5rem 5rem;
   background-position: center;
-
 }
+
 .vin-B {
   grid-area: userName;
   text-decoration: none;
-  color: auto;
 }
+
 .vin-C {
   grid-area: imgSubscribe;
   background: url(Images/subscribeButton.png);
@@ -131,6 +158,7 @@ button {
   background-size: 15rem 5rem;
   background-position: center;
 }
+
 .vin-D {
   grid-area: shareButtn;
   background: url(Images/share.png);
@@ -138,38 +166,53 @@ button {
   background-size: 10rem 3.6rem;
   background-position: center;
 }
+
 .vin-E {
   grid-area: views;
 }
-.vin-F {
 
+.vin-F {
   grid-area: like;
   background: url(Images/like.png);
   background-repeat: no-repeat;
   background-size: 3rem 3rem;
   background-position: center;
-
 }
 
 .vin-G {
-
   grid-area: dislike;
   background: url(Images/dislike.png);
   background-repeat: no-repeat;
   background-size: 3rem 3rem;
   background-position: center;
 }
-.vin-H{
 
-grid-area: addVideo;
-background: url(Images/addvideo.png);
-background-repeat: no-repeat;
-background-size: 4rem 4rem;
-background-position: center;
-
+.vin-H {
+  grid-area: addVideo;
+  background: url(Images/addvideo.png);
+  background-repeat: no-repeat;
+  background-size: 4rem 4rem;
+  background-position: center;
 }
 
-.comments{
+.comments {
   grid-area: videoDescription;
+}
 
+.comments {
+  grid-area: videoDescription;
+  display: flex;
+  flex-direction: column;
+  column-gap: 10rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 25rem;
+}
+
+.showMore {
+  background: url(Images/showMore.png);
+  grid-area: showMore;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: -250px;
 }
