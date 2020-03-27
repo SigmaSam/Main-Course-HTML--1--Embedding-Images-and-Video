@@ -81,6 +81,7 @@ button {
 
 .item-A {
   grid-area: videoBox;
+  margin-left: 15rem;
 }
 .item-B {
   display: grid;
@@ -91,7 +92,7 @@ button {
   'avatar imgSubscribe . . . . views'
   'addVideo shareButtn moreBtn . . dislike like'
   'addVideo shareButtn moreBtn . . dislike like'
-  'addVideo shareButtn moreBtn . . dislike like'
+  'addVideo shareButtn moreBtn . . dislike like';
 }
 
 }
