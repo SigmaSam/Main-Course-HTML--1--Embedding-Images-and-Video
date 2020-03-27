@@ -57,3 +57,75 @@ button {
 
 
 }
+
+.videoArea{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+   'videoBox videoBox sidebar'
+   'videoBox videoBox sidebar'
+   'tittle . sidebar'
+   'vidData vidData sidebar'
+   'vidData vidData sidebar'
+   'videoDescription .  sidebar';
+   padding: 3rem;
+}
+
+/* .sidebar{
+
+   overflow-x: hidden;
+   overflow-y: auto;
+} */
+
+
+.item-A {
+  grid-area: videoBox;
+}
+.item-B {
+  display: inline-grid;
+  grid-area: vidData;
+  grid-gap: 3px;
+  grid-template-areas:
+  'avatar userName . . . . .'
+  'avatar imgSubscribe . . . . views'
+  'addVideo shareButtn moreBtn . . dislike like'
+}
+
+}
+.item-C {
+
+  grid-area:videoDescription;
+
+}
+.item-D {
+ grid-area: sidebar;
+ overflow-x: hidden;
+ overflow-y: auto;
+}
+
+.item-E {
+  grid-area:tittle;
+}
+
+.vin-A {
+  grid-area: avatar;
+  background-size: cover;
+}
+.vin-B {
+  grid-area: userName;
+}
+.vin-C {
+  grid-area: imgSubscribe;
+}
+.vin-D {
+  grid-area: shareButtn;
+}
+.vin-E {
+  grid-area: views;
+}
+.vin-F {
+  grid-area: like;
+}
+.vin-G {
+  grid-area: dislike;
+}
