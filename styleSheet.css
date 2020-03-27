@@ -13,9 +13,6 @@ body {
   padding: 0.6rem 0.6rem;
 }
 
-/* img{
-  max-width: 100%;
-} */
 button {
   background-color: white;
   border: 0;
@@ -29,8 +26,9 @@ button {
 .nav-container {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 20% 45% 5% 5% 5% 5% 5%;
+  grid-template-columns: 20% 1fr 5% 5% 5% 5% 5%;
   grid-template-rows: auto;
+
 }
 
 .userOptions {
