@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: Roboto, Arial, "Sans Serif", Noto, "YT Sans", "Roboto Mono";
+  font-family: Roboto, Arial, "Sans Serif", Noto, "YT Sans", "Roboto Mono" sans-serif;
 }
 
 body {
