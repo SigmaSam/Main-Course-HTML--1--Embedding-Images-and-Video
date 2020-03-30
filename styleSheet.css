@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: Roboto, Arial, Sans Serif, Noto, YT Sans, Roboto Mono;
+  font-family: Roboto, Arial, "Sans Serif", Noto, "YT Sans", "Roboto Mono";
 }
 
 body {
@@ -97,21 +97,22 @@ justify-content:left;
   display: grid;
   grid-gap: 20px;
   grid-template-areas:
-    'videoBox videoBox sidebar'
-    'videoBox videoBox sidebar'
-    'tittle . sidebar'
-    'vidData vidData sidebar'
-    'vidData vidData sidebar'
-    'vidData vidData sidebar'
-    'videoDescription videoDescription  sidebar';
+    'videoBox videoBox .sidebar'
+    'videoBox videoBox .sidebar'
+    'tittle . . sidebar'
+    'vidData vidData . sidebar'
+    'vidData vidData . sidebar'
+    'vidData vidData . sidebar'
+    'videoDescription videoDescription . sidebar';
   padding: 3rem;
 }
 
-/* .sidebar{
+.sidebar{
 
    overflow-x: hidden;
    overflow-y: auto;
-} */
+   margin
+}
 .item-A {
   grid-area: videoBox;
   margin-left: 0.7rem;
@@ -123,9 +124,10 @@ justify-content:left;
 .item-B {
   display: grid;
   grid-area: vidData;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(2,1fr);
+  grid-template-rows: 1fr 2fr
+
 
   /* grid-template-areas:
     'avatar userName . . . . .'
@@ -146,7 +148,7 @@ justify-content:left;
 }
 
 .item-E {
-  grid-area: tittle
+  grid-area: tittle;
   font-size: 25px;
   line-height: normal;
   font-weight: 500;
@@ -157,8 +159,9 @@ justify-content:left;
   /* grid-area: avatar; */
   background: url(Images/avatar..png);
   background-repeat: no-repeat;
-  background-size: 5rem 5rem;
+  background-size: 7rem 7rem;
   /* background-position: center; */
+  margin-top: 1rem;
   grid-column-start: 1;
   grid-row: 1/3;
   align-items: stretch;
@@ -186,39 +189,62 @@ justify-content:left;
 }
 
 .vin-D {
-  grid-area: shareButtn;
+  /* grid-area: shareButtn; */
   background: url(Images/share.png);
   background-repeat: no-repeat;
-  background-size: 10rem 3.6rem;
+  background-size: 5rem 2.6rem;
   background-position: center;
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: 3rem;
+  margin-left: -10rem;
+  align-items: start;
+
 }
 
 .vin-E {
-  grid-area: views;
+  /* grid-area: views; */
+  grid-column: 5;
+  line-height: 24px;
+  text-align: left;
+  font-size: 19px;
+  color: rgb(102, 102, 102);
 }
 
 .vin-F {
-  grid-area: like;
+  /* grid-area: like; */
   background: url(Images/like.png);
   background-repeat: no-repeat;
-  background-size: 3rem 3rem;
-  background-position: center;
+  /* background-size: 5rem 2.6rem */
+  background-position: left;
+  margin-top: 3rem;
+  grid-column: 5;
+  grid-row: 2;
+
 }
 
 .vin-G {
-  grid-area: dislike;
+  /* grid-area: dislike; */
   background: url(Images/dislike.png);
   background-repeat: no-repeat;
-  background-size: 3rem 3rem;
+  /* background-size: 3rem 3rem; */
   background-position: center;
+  margin-top: 3rem;
+  grid-column: 5;
+  grid-row: 2;
 }
 
 .vin-H {
-  grid-area: addVideo;
+  /* grid-area: addVideo; */
   background: url(Images/addvideo.png);
   background-repeat: no-repeat;
   background-size: 4rem 4rem;
   background-position: center;
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: 3rem;
+  margin-left: -3rem;
+  align-items: start;
 }
 
 .comments {
@@ -233,12 +259,4 @@ justify-content:left;
   overflow-x: hidden;
   overflow-y: auto;
   max-height: 25rem;
-}
-
-.showMore {
-  background: url(Images/showMore.png);
-  grid-area: showMore;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-left: -250px;
 }
