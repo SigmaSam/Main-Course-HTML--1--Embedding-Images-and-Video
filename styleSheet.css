@@ -13,11 +13,6 @@ button {
   border: 0;
 }
 
-.nav-container {
-  color: white;
-  padding: 0.6rem 0.6rem;
-}
-
 .wrapper {
   display: grid;
 }
@@ -27,24 +22,38 @@ button {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 2fr 7fr 3fr;
-  grid-template-rows: auto;
+  color: white;
+  padding: 0.6rem 0.6rem;
+  max-height: 3rem;
+  overflow: hidden;
+  margin-bottom: 3rem;
+
 }
 
 .userOptions {
-  float: left;
-  margin-top: -20px;
-  align-self: center;
-  justify-content: end;
+margin-left: 7rem;
+margin-top: -0.5rem;
+overflow: inherit;
+justify-content:left;
+
 }
 
 .searchArea {
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
   border: solid 0.5px;
-  margin-top: -5px;
+  margin-top: -0.5rem;
   border-right: none;
   justify-self: center;
+  color: white;
+  padding: 0.6rem 0.6rem;
+
+}
+
+.searchBox {
+  width: 45rem;
+  max-width: 100%;
+  height: 1.9rem;
+  margin-left: 40px;
+  align-items: stretch;
 }
 
 .sButton {
@@ -53,24 +62,21 @@ button {
   background-position: center;
   height: 1.9rem;
   width: 4rem;
-  margin-left: -0.3rem;
+  margin-left: -0.1rem;
+  border-left: none;
   border: solid 0.5px;
   border-color: grey;
+  align-self: center;
+  position: absolute;
+
 }
 
 #YTLogo {
   height: 20px;
   width: 179px;
-  align-self: start;
+  align-self: stretch;
 }
 
-#searchBox {
-  width: 30rem;
-  max-width: 100%;
-  height: 1.9rem;
-  margin-left: 40px;
-  align-items: center;
-}
 
 /*NavBar Area*/
 /* #searchButton {
@@ -86,6 +92,7 @@ button {
   opacity: 1;
   grid-column: 2;
 } */
+
 .videoArea {
   display: grid;
   grid-gap: 20px;
@@ -110,18 +117,22 @@ button {
   margin-left: 0.7rem;
   height: 30rem;
   width: 50rem;
+  background-color: black;
 }
 
 .item-B {
   display: grid;
   grid-area: vidData;
   grid-gap: 1rem;
-  grid-template-areas:
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(2,1fr);
+
+  /* grid-template-areas:
     'avatar userName . . . . .'
     'avatar imgSubscribe . . . . views'
     'addVideo shareButtn moreBtn . . dislike like'
     'addVideo shareButtn moreBtn . . dislike like'
-    'addVideo shareButtn moreBtn . . dislike like';
+    'addVideo shareButtn moreBtn . . dislike like'; */
 }
 
 .item-C {
@@ -135,28 +146,43 @@ button {
 }
 
 .item-E {
-  grid-area: tittle;
+  grid-area: tittle
+  font-size: 25px;
+  line-height: normal;
+  font-weight: 500;
+  margin-left: 15px;
 }
 
 .vin-A {
-  grid-area: avatar;
+  /* grid-area: avatar; */
   background: url(Images/avatar..png);
   background-repeat: no-repeat;
   background-size: 5rem 5rem;
-  background-position: center;
+  /* background-position: center; */
+  grid-column-start: 1;
+  grid-row: 1/3;
+  align-items: stretch;
 }
 
 .vin-B {
-  grid-area: userName;
+  /* grid-area: userName; */
+  grid-column: 2;
+  grid-row: 1;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
   text-decoration: none;
+  align-self: start;
 }
 
 .vin-C {
-  grid-area: imgSubscribe;
+  /* grid-area: imgSubscribe; */
   background: url(Images/subscribeButton.png);
   background-repeat: no-repeat;
-  background-size: 15rem 5rem;
-  background-position: center;
+  /* background-size: 15rem 5rem;
+  background-position: center; */
+  grid-column: 2;
+  grid-row: 2;
+
 }
 
 .vin-D {
